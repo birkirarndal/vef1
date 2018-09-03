@@ -1,3 +1,5 @@
+from sys import argv
+
 from bottle import route, run
 
 @route("/")
@@ -22,4 +24,6 @@ def jobs():
 def jobs():
     return "Hér eru myndir frá Steve Jobs"
 
-run(host='localhost', port=8080)
+#run(host='localhost', port=8080)
+
+bottle.run(host='0.0.0.0', port=argv[1])
