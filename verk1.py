@@ -1,6 +1,6 @@
 from sys import argv
 
-from bottle import route, run
+from bottle import *
 
 @route("/")
 def index():
